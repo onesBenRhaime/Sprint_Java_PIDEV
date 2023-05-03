@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="666.0" prefWidth="1278.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ComptesAdminController">
+   <children>
+      <Label fx:id="welcomeLb" layoutX="315.0" layoutY="52.0" prefHeight="42.0" prefWidth="439.0" text="Accounts Demands">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scroll" layoutX="315.0" layoutY="164.0" prefHeight="416.0" prefWidth="939.0">
+         <content>
+            <TableView fx:id="tableview" prefHeight="400.0" prefWidth="956.0">
+               <columns>
+                  <TableColumn fx:id="type" prefWidth="120.0" text="ACCOUNT TYPE" />
+                  <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="150.0" text="DATE DEMANDS" />
+                  <TableColumn fx:id="usercol" prefWidth="117.0" text="CLIENT" />
+                  <TableColumn fx:id="statuecol" prefWidth="122.0" text="STATUE" />
+                  <TableColumn fx:id="maxSoldefx" prefWidth="129.0" text="MAX SOLDE" />
+                  <TableColumn fx:id="minSoldefx" prefWidth="133.0" text="MIN SOLDE" />
+                  <TableColumn fx:id="redSoldefx" prefWidth="168.0" text="RED SOLDE" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="656.0" prefWidth="276.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 20;">
+               <image>
+                  <Image url="@../Ressources/logo3.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ScrollPane prefHeight="492.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF; -fx-translate-y: 50;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="-9.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="65.0" prefWidth="234.0" stylesheets="@style.css" text="Accueil" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/accueil.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="45.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="234.0" stylesheets="@style.css" text="Profile" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/utilisateur.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="90.0" mnemonicParsing="false" onAction="#goToAccounts" prefHeight="65.0" prefWidth="234.0" stylesheets="@style.css" text="Accounts" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/colis.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="148.0" mnemonicParsing="false" onAction="#goToAccountsDemonds" prefHeight="65.0" prefWidth="234.0" stylesheets="@style.css" text="Accounts Demands" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/categorie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="201.0" mnemonicParsing="false" onAction="#goToTransactions" prefHeight="53.0" prefWidth="234.0" stylesheets="@style.css" text="Wire Transfer" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="254.0" mnemonicParsing="false" onAction="#goToSendMoney" prefHeight="53.0" prefWidth="234.0" stylesheets="@style.css" text="Request-Money" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="307.0" mnemonicParsing="false" prefHeight="172.0" prefWidth="234.0" stylesheets="@style.css" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Button layoutX="1131.0" layoutY="591.0" mnemonicParsing="false" onAction="#Reject" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: #CF0000;" text="Reject " textFill="WHITE" />
+      <Button layoutX="997.0" layoutY="591.0" mnemonicParsing="false" onAction="#Accept" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: #057507;" text="Accept" textFill="WHITE" />
+      <Button layoutX="309.0" layoutY="596.0" mnemonicParsing="false" onAction="#details" prefHeight="16.0" prefWidth="42.0" style="-fx-background-color: #ffffff;" textFill="#160a39">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/eyePNG.PNG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="showC" layoutX="1069.0" layoutY="109.0" mnemonicParsing="false" onAction="#refresh" prefHeight="31.0" prefWidth="177.0" style="-fx-background-color: #CF0000;" stylesheets="@../../../elbaldi-test/src/elbaldi/GUI/style.css" text="Rafraîchir" />
+   </children>
+</AnchorPane>

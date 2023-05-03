@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UpdateAgenceController">
+    <children>
+      <Label layoutX="264.0" layoutY="33.0" text="Update" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cName" layoutX="226.0" layoutY="122.0" promptText="name" />
+      <TextField fx:id="cDesc" layoutX="226.0" layoutY="188.0" promptText="description" />
+      <Button fx:id="btnSave" layoutX="275.0" layoutY="332.0" mnemonicParsing="false" onAction="#UpdateAgence" text="UPDATE" />
+   </children>
+</AnchorPane>

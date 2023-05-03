@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1317.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.OffersController">
+   <children>
+      <BorderPane layoutX="6.0" prefHeight="780.0" prefWidth="1315.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="427.0" styleClass="right-bar" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="427.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="128.0" text="Credit" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label text="Offers" textFill="#878787">
+                           <font>
+                              <Font name="Cambria" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" stylesheets="@../values/style.css" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="tfSearch" prefHeight="40.0" prefWidth="235.0" promptText="Type here to search" style="-fx-border-color: #154c79; -fx-border-width: 2;">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#search" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #A30000;" styleClass="search-button" stylesheets="@../values/style.css" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="322.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                   search by amount interval :" wrappingWidth="385.75897216796875">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Text>
+                     </children></HBox>
+                  <Button fx:id="search" mnemonicParsing="false" onAction="#searchAmount" style="-fx-background-color: #A30000;" text="search by amount" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="300.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Slider fx:id="slider" prefHeight="85.0" prefWidth="230.0">
+                     <padding>
+                        <Insets bottom="50.0" left="20.0" right="60.0" top="20.0" />
+                     </padding>
+                  </Slider>
+                  <VBox fx:id="chosenOfferCard" alignment="CENTER" prefHeight="402.0" prefWidth="356.0" style="-fx-background-radius: 20; -fx-background-color: #154c79;">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="337.0" />
+                        <HBox prefHeight="60.0" prefWidth="335.0">
+                           <children>
+                              <Label prefHeight="67.0" prefWidth="94.0" />
+                              <Label fx:id="lbcat" prefHeight="60.0" prefWidth="202.0" text="  Category :" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbRate" prefHeight="60.0" prefWidth="251.0" text="per installment :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label fx:id="lbMin" prefHeight="48.0" prefWidth="276.0" text="Minimum Amount :" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbMax" prefHeight="48.0" prefWidth="276.0" text="Maximum Amount :" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbMonths" prefHeight="48.0" prefWidth="276.0" text="Installment Interval :" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbWithdraw" prefHeight="48.0" prefWidth="276.0" text="withdraw Monthly :" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnApply" mnemonicParsing="false" onAction="#apply" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #A30000; -fx-background-radius: 30;" styleClass="add-btn" text="Apply" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="158.0" prefWidth="890.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/yy.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: white; -fx-border-color: gray;" text="Home">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="45.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dem.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="lboffers" mnemonicParsing="false" onAction="#offers" prefHeight="53.0" prefWidth="151.0" style="-fx-background-color: white; -fx-border-color: gray;" text="               Loans offers">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/apply.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="lbdem" mnemonicParsing="false" onAction="#mydemandes" prefHeight="54.0" prefWidth="166.0" style="-fx-background-color: white; -fx-border-color: gray;" text="                   My Demandes">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scroll" prefHeight="689.0" prefWidth="890.0" styleClass="transparent" stylesheets="@../values/style.css">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

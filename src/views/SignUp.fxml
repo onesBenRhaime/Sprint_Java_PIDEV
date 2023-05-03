@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.SignUpController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #AB2328;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="237.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Mega-PC/Desktop/BARA%20LAWEJ/PIDEV/Graphics/Maze.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="30.0" top="80.0" />
+               </VBox.margin>
+            </ImageView>
+         </children></VBox>
+      <Label layoutX="372.0" layoutY="37.0" text="Sign Up">
+         <font>
+            <Font name="Constantia" size="52.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomTF" layoutX="443.0" layoutY="118.0" promptText="Enter your name" style="-fx-background-color: transparent; -fx-border-color: #AB2328; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="phoneTF" layoutX="443.0" layoutY="202.0" promptText="Enter your username" style="-fx-background-color: transparent; -fx-border-color: #AB2328; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="passwordTF" layoutX="443.0" layoutY="282.0" promptText="Enter your password" style="-fx-background-color: transparent; -fx-border-color: #AB2328; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="emailTF" layoutX="443.0" layoutY="240.0" promptText="Enter your email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #AB2328;" />
+      <Button layoutX="475.0" layoutY="317.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #AB2328;" text="Sign Up" textFill="WHITE" />
+      <Label layoutX="335.0" layoutY="119.0" prefHeight="26.0" prefWidth="75.0" text="Full Name :" />
+      <Label layoutX="335.0" layoutY="167.0" text="Agency :" />
+      <Label layoutX="334.0" layoutY="207.0" prefHeight="18.0" prefWidth="94.0" text="Phone Number :" />
+      <Label layoutX="335.0" layoutY="245.0" prefHeight="18.0" prefWidth="75.0" text="Email :" />
+      <Label layoutX="335.0" layoutY="287.0" prefHeight="18.0" prefWidth="75.0" text="Password :" />
+      <Label layoutX="368.0" layoutY="357.0" />
+      <Hyperlink layoutX="369.0" layoutY="363.0" onAction="#gotoLogin" text="Already have an account? Sign in!" />
+      <ComboBox id="AgenceBox" fx:id="AgenceBox" layoutX="443.0" layoutY="162.0" prefWidth="150.0" promptText="Choose your agency" style="-fx-background-color: transparent; -fx-border-color: #AB2328; -fx-border-width: 0px 0px 2px 0px;" visibleRowCount="3" />
+   </children>
+</AnchorPane>

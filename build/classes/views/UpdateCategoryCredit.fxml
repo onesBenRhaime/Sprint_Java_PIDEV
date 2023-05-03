@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1000.0" style="-fx-background-color: #EBECF0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UpdateCategoryCreditController">
+   <children>
+      <GridPane layoutX="322.0" layoutY="136.0" prefHeight="195.0" prefWidth="584.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.20001220703125" minWidth="10.0" prefWidth="122.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="380.8" minWidth="10.0" prefWidth="372.8" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" GridPane.rowIndex="1">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="tfDesc" prefHeight="107.0" prefWidth="426.0" style="-fx-background-radius: 30;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfName" style="-fx-background-radius: 10;" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Text fx:id="lbUpdateCat" layoutX="322.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Category :">
+         <font>
+            <Font name="News706 BT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnUpdate" layoutX="799.0" layoutY="340.0" mnemonicParsing="false" onAction="#update" prefHeight="34.0" prefWidth="106.0" style="-fx-background-radius: 10; -fx-background-color: #990000;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="677.0" layoutY="340.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="106.0" style="-fx-background-radius: 10; -fx-background-color: #990000;" text="back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="7.0" prefHeight="657.0" prefWidth="279.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 20;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../images/logo1.png" />
+               </image>
+            </ImageView>
+            <ScrollPane prefHeight="458.0" prefWidth="249.0" style="-fx-background-color: #FFFFFF; -fx-translate-y: 50;" stylesheets="@style.css">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="234.0" stylesheets="@style.css" text="Home" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/accueil.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="45.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="235.0" stylesheets="@style.css" text="Profile" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/utilisateur.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="lbcat" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="90.0" mnemonicParsing="false" onAction="#categories" prefHeight="66.0" prefWidth="233.0" stylesheets="@style.css" text="Category Management" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/colis.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="lboffer" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="148.0" mnemonicParsing="false" onAction="#offers" prefHeight="65.0" prefWidth="234.0" stylesheets="@style.css" text="Loan Managment" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/categorie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="lbdem" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="201.0" mnemonicParsing="false" onAction="#demandes" prefHeight="54.0" prefWidth="234.0" stylesheets="@style.css" text="Demandes Management" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="254.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="233.0" stylesheets="@style.css" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="307.0" mnemonicParsing="false" prefHeight="147.0" prefWidth="234.0" stylesheets="@style.css" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

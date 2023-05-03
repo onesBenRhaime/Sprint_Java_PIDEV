@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ModifiertypechequeController">
+   <children>
+      <Pane fx:id="pnlOverview" layoutY="-1.0" prefHeight="746.0" prefWidth="1051.0" style="-fx-background-color: #ffff;" stylesheets="@style.css">
+         <children>
+            <Label fx:id="welcomeLb" layoutX="395.0" layoutY="57.0" text="Update New Type Check book" textFill="#b91010">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Ajouterfx" layoutX="468.0" layoutY="568.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="31.0" prefWidth="168.0" text="Modifier" textFill="#b91010" />
+            <Label fx:id="nomlabel" layoutX="289.0" layoutY="151.0" prefHeight="27.0" prefWidth="68.0" text="Nom:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="descriptionlabel" layoutX="276.0" layoutY="217.0" prefHeight="27.0" prefWidth="107.0" text="Description:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+           <VBox alignment="TOP_CENTER" prefHeight="656.0" prefWidth="256.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000;" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/Mazebank.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ScrollPane prefHeight="518.0" prefWidth="214.0" style="-fx-background-color: #FFFFFF;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="216.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;">
+                     <children>
+                        <Button fx:id="Home1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-17.0" mnemonicParsing="false" onAction="#Accueil" prefHeight="42.0" prefWidth="249.0" text="Accueil" textFill="#030303">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/accueil%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="categorie1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-21.0" layoutY="43.0" mnemonicParsing="false" onAction="#affichelistetypecarte" prefHeight="42.0" prefWidth="249.0" stylesheets="@../../../../../../Downloads/VVVV/elbaldi/src/elbaldi/GUI/style.css" text="Liste Type Carte">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/credit-card.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="demandcard" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-21.0" layoutY="127.0" mnemonicParsing="false" onAction="#listedemandecard" prefHeight="42.0" prefWidth="249.0" stylesheets="@../../../../../../Downloads/VVVV/elbaldi/src/elbaldi/GUI/style.css" text="Demande Card">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/list-dropdown.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="comm1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-34.0" layoutY="85.0" mnemonicParsing="false" onAction="#listetypecheque" prefHeight="42.0" prefWidth="249.0" stylesheets="@../../../../../../Downloads/VVVV/elbaldi/src/elbaldi/GUI/style.css" text="Liste Type Cheque">
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/cheque.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnSignout1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-37.0" layoutY="169.0" mnemonicParsing="false" onAction="#listedemandecheque" prefHeight="41.0" prefWidth="256.0" text="Demande Checkbook">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Ressources/checkbook.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnSignout11112" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-16.0" layoutY="503.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="249.0" text="Réclamation">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/VVVV/elbaldi/src/Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnSignout111121" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-14.0" layoutY="543.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="240.0" stylesheets="@../../../../../../Downloads/VVVV/elbaldi/src/elbaldi/GUI/style.css" text="Commentaires">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/VVVV/elbaldi/src/Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="aviss" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="585.0" mnemonicParsing="false" onAction="#avis" prefHeight="41.0" prefWidth="240.0" text="Avis">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/VVVV/elbaldi/src/Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnSignout11112111" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-12.0" layoutY="627.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="240.0" text="Déconnexion">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/VVVV/elbaldi/src/Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+            <TextArea fx:id="descriptionfx" layoutX="429.0" layoutY="217.0" prefHeight="86.0" prefWidth="259.0" />
+            <Button fx:id="annulerfx" layoutX="666.0" layoutY="567.0" mnemonicParsing="false" onAction="#annuler" prefHeight="31.0" prefWidth="174.0" text="Annuler" textFill="#b91010" />
+            <TextField fx:id="nomfx" layoutX="429.0" layoutY="149.0" onMouseClicked="#prefixe" prefHeight="31.0" prefWidth="252.0" />
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="740.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Ressources/Logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="559.0" layoutY="659.0" mnemonicParsing="false" onAction="#affichertypecarte" prefHeight="37.0" prefWidth="238.0" text="Afficher" textFill="#b91010" />
+            <DatePicker fx:id="datecfx" layoutX="438.0" layoutY="470.0" prefHeight="31.0" prefWidth="174.0" />
+            <DatePicker fx:id="datevfx" layoutX="851.0" layoutY="468.0" prefHeight="31.0" prefWidth="174.0" />
+            <Label fx:id="descriptionlabel1" layoutX="261.0" layoutY="472.0" prefHeight="27.0" prefWidth="155.0" text="Date de creation">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="descriptionlabel11" layoutX="666.0" layoutY="470.0" prefHeight="27.0" prefWidth="187.0" text="Date de validation">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomlabel1" layoutX="280.0" layoutY="335.0" prefHeight="27.0" prefWidth="100.0" text="Start num">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="startnumfx" layoutX="426.0" layoutY="333.0" onMouseClicked="#prefixe" prefHeight="31.0" prefWidth="252.0" />
+            <Label fx:id="nomlabel11" layoutX="280.0" layoutY="406.0" prefHeight="27.0" prefWidth="100.0" text="Start num">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="endnumfx" layoutX="426.0" layoutY="404.0" onMouseClicked="#prefixe" prefHeight="31.0" prefWidth="252.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

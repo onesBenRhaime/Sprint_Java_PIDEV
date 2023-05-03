@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.OfferController">
+   <children>
+      <VBox fx:id="chosenOfferCard" alignment="CENTER" layoutX="7.0" layoutY="10.0" onMousePressed="#click" opacity="0.63" prefHeight="294.0" prefWidth="363.0" style="-fx-background-radius: 20; -fx-background-color: #154c79;">
+         <children>
+            <HBox opacity="0.52" prefHeight="27.0" prefWidth="327.0" />
+            <HBox prefHeight="60.0" prefWidth="335.0">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="47.0" />
+                  <Label fx:id="lbcat" prefHeight="60.0" prefWidth="147.0" text="     Category :" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbRate" prefHeight="60.0" prefWidth="173.0" text="per installment : " textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="lbMin" prefHeight="48.0" prefWidth="276.0" text="Minimum Amount :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMax" prefHeight="48.0" prefWidth="276.0" text="Maximum Amount :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMonths" prefHeight="48.0" prefWidth="276.0" text="Installment Interval :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbWithdraw" prefHeight="48.0" prefWidth="276.0" text="withdraw Monthly :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

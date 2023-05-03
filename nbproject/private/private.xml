@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/DemandeCreditService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/DemandesCredit.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/MyDemandes.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateLoanController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/table-view.css</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateCategoryCredit.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/Offer.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/CreditService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateCategoryCreditController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/DemandesCreditController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/IServiceBlog.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/DetailDemandeController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/OffersController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateDemande.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreditCategoriesController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateDemandeCredit.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateCategoryCreditController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateLoan.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateLoan.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateDemandeController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/DetailDemande.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/UserService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/models/DemandeCredit.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/AgenceService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateLoanController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreateDemandeCreditController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/Offers.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/CategoryCreditService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/models/Credit.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/UpdateCategoryCredit.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/MyListener.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/models/CategoryCredit.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/OfferController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/AddBlogController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/test/BlogFXMain.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/CreditCategories.fxml</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/services/CategoryService.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/MyDemandesController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/LoansController.java</file>
+            <file>file:/C:/Users/BAZINFO/Documents/NetBeansProjects/MazeBank_SprintJava/src/views/Loans.fxml</file>
+        </group>
+    </open-files>
+</project-private>

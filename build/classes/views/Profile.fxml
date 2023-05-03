@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ProfileController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #AB2328;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Mega-PC/Downloads/usricon-removebg-preview.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="55.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="nomLB1" contentDisplay="BOTTOM" text="Label" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="15.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="49.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Mega-PC/Downloads/icons8-user-24.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="My Profile" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="168.0" prefHeight="49.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Mega-PC/Downloads/icons8-notification-50%20(1).png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Notifications" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Mega-PC/Downloads/icons8-key-50.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Change Password" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #242551; -fx-background-radius: 30;" text="Logout" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="358.0" layoutY="129.0" text="Name           :" />
+      <Label layoutX="358.0" layoutY="158.0" text="Phone" />
+      <Label layoutX="327.0" layoutY="56.0" prefHeight="10.0" prefWidth="118.0" text="Profile details :">
+         <font>
+            <Font name="Constantia" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLB" layoutX="471.0" layoutY="101.0" text="Label" />
+      <Label fx:id="nomLB" layoutX="471.0" layoutY="129.0" text="Label" />
+      <Label fx:id="phoneLB" layoutX="471.0" layoutY="158.0" text="Label" />
+      <Label layoutX="357.0" layoutY="101.0" text="Email            :" />
+      <Button fx:id="EditProfile" layoutX="465.0" layoutY="281.0" mnemonicParsing="false" onAction="#edit" style="-fx-background-radius: 30; -fx-background-color: #242551;" text="Edit Profile" textFill="WHITE" />
+      <Button fx:id="deleteButton" layoutX="309.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" style="-fx-background-radius: 30; -fx-background-color: #242551;" text="Delete Account" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DetailDemandeController">
+   <children>
+      <GridPane layoutX="36.0" layoutY="20.0" prefHeight="523.0" prefWidth="652.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.4000244140625" minWidth="10.0" prefWidth="221.20001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.79998779296875" minWidth="10.0" prefWidth="430.79998779296875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="177.00000610351563" minHeight="10.0" prefHeight="32.599996948242186" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="211.99999084472657" minHeight="9.600013732910135" prefHeight="35.19999694824219" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="283.99998626708987" minHeight="10.0" prefHeight="77.39999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="261.7999969482422" minHeight="1.8000396728515682" prefHeight="31.59998779296876" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="393.6000061035157" minHeight="10.0" prefHeight="167.8000244140625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="311.9999877929687" minHeight="10.0" prefHeight="164.5999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.39996337890625" minHeight="0.0" prefHeight="59.60001220703123" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="lbCat" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :" GridPane.rowIndex="6">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbCin2" strokeType="OUTSIDE" strokeWidth="0.0" text="Id card second side  :" GridPane.rowIndex="5">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbCin1" strokeType="OUTSIDE" strokeWidth="0.0" text="Id card first side  :" GridPane.rowIndex="4">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" GridPane.rowIndex="3">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbNote" strokeType="OUTSIDE" strokeWidth="0.0" text="Note :" GridPane.rowIndex="2">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbAmount" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :" GridPane.rowIndex="1">
+               <font>
+                  <Font name="News706 BT Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="Cat" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="222.93671035766602" GridPane.columnIndex="1" />
+            <Text fx:id="amount" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text fx:id="note" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="im1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ImageView fx:id="im2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Text fx:id="status" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

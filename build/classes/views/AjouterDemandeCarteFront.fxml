@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="814.0" prefWidth="1338.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AjouterDemandeCarteFrontController">
+      <children>
+      <Label fx:id="welcome" layoutX="335.0" layoutY="170.0" prefHeight="54.0" prefWidth="479.0" text="Ajouter Demande Carte Bancaire " textFill="#a20812">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="description" layoutX="502.0" layoutY="461.0" prefHeight="46.0" prefWidth="246.0" promptText="Description" />
+      <Label fx:id="typefx" layoutX="364.0" layoutY="259.0" prefHeight="35.0" prefWidth="95.0" text="Type">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="259.0" text="Label">
+         <font>
+            <Font size="2.0" />
+         </font>
+      </Label>
+      <Label layoutX="644.0" layoutY="276.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="identifierfx" layoutX="364.0" layoutY="397.0" text="Identifier">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionfx" layoutX="364.0" layoutY="465.0" text="Description">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cin1" layoutX="350.0" layoutY="536.0" text="Cin Side 1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="identifier" layoutX="498.0" layoutY="399.0" prefHeight="35.0" prefWidth="288.0" promptText="Identifier" />
+            <ListView fx:id="img" layoutX="486.0" layoutY="532.0" prefHeight="77.0" prefWidth="186.0" />
+            <Button fx:id="insérer" layoutX="680.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" text="Insérer" />
+    <HBox layoutX="-34.0" layoutY="14.0" prefHeight="134.0" prefWidth="1158.0" style="-fx-translate-x: 60;">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="820.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/Mazebank.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Accueilfx1" alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Home" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/accueil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Accueilfx11" alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Loan" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Accueilfx14" alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Deposit" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Accueilfx15" alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToTransactions" prefHeight="45.0" prefWidth="172.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Wire Transfer" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Accueilfx16" alignment="BASELINE_LEFT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#goToSendMoney" prefHeight="45.0" prefWidth="174.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Send Money" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Accueilfx161" alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToAccounts" prefHeight="45.0" prefWidth="156.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Accounts" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categorisation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="ajouterfx" layoutX="814.0" layoutY="768.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #057507;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="annuler" layoutX="986.0" layoutY="768.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #CF0000;" text="Annuler" textFill="WHITE" />
+      
+      <ComboBox fx:id="typecartee" layoutX="499.0" layoutY="262.0" prefHeight="35.0" prefWidth="226.0" />
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="831.0" layoutY="771.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="1001.0" layoutY="775.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/png-clipart-share-icon-computer-icons-symbol-sharing-font-awesome-shares-miscellaneous-angle.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="email" layoutX="498.0" layoutY="328.0" prefHeight="35.0" prefWidth="288.0" promptText="Email" />
+      <Label fx:id="emailfx1" layoutX="364.0" layoutY="325.0" prefHeight="35.0" prefWidth="95.0" text="Email">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="cin12" layoutX="364.0" layoutY="658.0" text="Cin Side 1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="img2" layoutX="500.0" layoutY="654.0" prefHeight="77.0" prefWidth="186.0" />
+      <Button fx:id="insérer2" layoutX="694.0" layoutY="677.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" text="Insérer" />
+   </children>
+</AnchorPane>

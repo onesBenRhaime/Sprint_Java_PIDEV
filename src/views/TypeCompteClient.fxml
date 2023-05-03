@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1288.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.TypeCompteClientController">
+   <children>
+      <Label fx:id="welcomeLb" layoutX="44.0" layoutY="150.0" prefHeight="54.0" prefWidth="310.0" text="Accounts Types" textFill="#a20812">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="-24.0" layoutY="14.0" prefHeight="119.0" prefWidth="1216.0" style="-fx-translate-x: 60;">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 2;">
+               <image>
+                  <Image url="@../Ressources/icon.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Home" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/accueil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Loan" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Deposit" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToTransactions" prefHeight="45.0" prefWidth="172.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Wire Transfer" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#goToSendMoney" prefHeight="45.0" prefWidth="187.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Send Money" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToAccounts" prefHeight="45.0" prefWidth="185.0" style="-fx-translate-y: 30; -fx-translate-x: 50; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Accounts" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categorisation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="199.0" layoutY="215.0" prefHeight="349.0" prefWidth="967.0" style="-fx-padding: 30;">
+         <children>
+            <AnchorPane id="AnchorPane" fx:id="anch" nodeOrientation="LEFT_TO_RIGHT" prefHeight="411.0" prefWidth="282.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-padding: 2;">
+               <children>
+                  <Label fx:id="typefx" alignment="CENTER" contentDisplay="CENTER" layoutX="-12.0" layoutY="104.0" prefHeight="85.0" prefWidth="293.0" text="Nom de categorie" textAlignment="CENTER" textFill="#c31c1c">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descfx" alignment="CENTER" layoutX="21.0" layoutY="164.0" prefHeight="116.0" prefWidth="246.0" text="Description" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="105.0" fitWidth="117.0" layoutX="78.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categ.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="-40.0" right="-25.0" top="-25.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="305.0" prefWidth="275.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-padding: 2;">
+               <children>
+                  <Label fx:id="typefx2" alignment="CENTER" contentDisplay="CENTER" layoutX="-12.0" layoutY="104.0" prefHeight="85.0" prefWidth="293.0" text="Nom de categorie" textAlignment="CENTER" textFill="#c31c1c">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descfx2" alignment="CENTER" layoutX="22.0" layoutY="148.0" prefHeight="119.0" prefWidth="253.0" text="Description" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomLabell1" layoutX="139.0" layoutY="144.0">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="di1" layoutX="139.0" layoutY="179.0" />
+                  <Label fx:id="idLabel1" layoutX="304.0" layoutY="29.0" />
+                  <ImageView fitHeight="105.0" fitWidth="117.0" layoutX="78.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categ.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="-40.0" right="-25.0" top="-25.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="305.0" prefWidth="275.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-padding: 2;">
+               <children>
+                  <Label fx:id="typefx3" alignment="CENTER" contentDisplay="CENTER" layoutY="99.0" prefHeight="85.0" prefWidth="293.0" text="Nom de categorie" textAlignment="CENTER" textFill="#c31c1c">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descfx3" alignment="CENTER" layoutX="21.0" layoutY="151.0" prefHeight="143.0" prefWidth="236.0" text="Description" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomLabell11" layoutX="139.0" layoutY="144.0">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="di11" layoutX="139.0" layoutY="179.0" />
+                  <Label fx:id="idLabel11" layoutX="304.0" layoutY="29.0" />
+                  <ImageView fitHeight="85.0" fitWidth="112.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categ.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="-40.0" right="-25.0" top="-25.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button layoutX="221.0" layoutY="575.0" mnemonicParsing="false" onAction="#deposit" prefHeight="31.0" prefWidth="906.0" style="-fx-background-color: #cf0000;" text="Deposit" />
+      <Button layoutX="940.0" layoutY="162.0" mnemonicParsing="false" onAction="#yours" prefHeight="31.0" prefWidth="195.0" style="-fx-background-color: #000000;" text="Yours" wrapText="true" />
+   </children>
+</AnchorPane>

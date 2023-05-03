@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.SendMoneyClientController">
+    <children>
+      <HBox layoutX="-6.0" layoutY="14.0" prefHeight="119.0" prefWidth="1160.0" style="-fx-translate-x: 60;">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 2;">
+               <image>
+                  <Image url="@../Ressources/icon.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Home" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/accueil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Loan" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Deposit" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToTransactions" prefHeight="45.0" prefWidth="172.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Wire Transfer" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#goToSendMoney" prefHeight="45.0" prefWidth="174.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Send Money" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/produit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="7.0" mnemonicParsing="false" onAction="#goToAccounts" prefHeight="45.0" prefWidth="156.0" style="-fx-translate-y: 30; -fx-translate-x: 80; -fx-translate-z: 60; -fx-background-color: #CF0000;" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Accounts" textFill="#e7e5e5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ressources/categorisation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Button layoutX="1021.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToAjouter" prefHeight="41.0" prefWidth="196.0" style="-fx-background-color: #057507;" stylesheets="@style.css" text="Add New ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ScrollPane fx:id="scroll" layoutX="92.0" layoutY="207.0" prefHeight="357.0" prefWidth="1070.0">
+         <content>
+            <TableView fx:id="tableview" prefHeight="359.0" prefWidth="1051.0">
+               <columns>
+                  <TableColumn fx:id="reqToCol" prefWidth="252.0" text="Request To" />
+                  <TableColumn fx:id="reqFromCol" minWidth="0.0" prefWidth="313.0" text=" Request From" />
+                  <TableColumn fx:id="amountCol" prefWidth="239.00003051757812" text="Amount" />
+                  <TableColumn fx:id="dateCol" prefWidth="247.0" text="Date" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+     <Label fx:id="welcomeLb" layoutX="40.0" layoutY="145.0" prefHeight="45.0" prefWidth="239.0" text="Request Money" textFill="#a20812">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
